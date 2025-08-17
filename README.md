@@ -19,3 +19,5 @@ Execute the script by SSH into OpenWRT router.
 SCP the script into router : **scp -O -oHostKeyAlgorithms=+ssh-rsa -r ./setup_openwrt_ap.sh root@192.168.1.1:/root/**
 
 Share your comments for any improvement required.
+
+Note: after doing this setup you might see the conflict at main router to assign the IP to your devices. you need to set the static IP at your router or device to avoid the issue.
