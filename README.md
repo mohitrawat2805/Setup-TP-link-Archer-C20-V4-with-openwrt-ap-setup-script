@@ -17,3 +17,5 @@ Execute the script by SSH into OpenWRT router.
 ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.1.1  # No password required
 
 SCP the script into router : scp -O -oHostKeyAlgorithms=+ssh-rsa -r ./setup_openwrt_ap.sh root@192.168.1.1:/root/
+
+Share your comments for any improvement required.
