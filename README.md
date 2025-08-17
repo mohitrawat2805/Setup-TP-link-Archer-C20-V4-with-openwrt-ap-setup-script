@@ -10,6 +10,10 @@ you can also use 2.5GHz and 5 GHz to connect with main router and 2.5 GHz as AP.
 I my setup I have connected devices to My Archer C20 Via LAN and I wanted a more faster connection to the devices and 2.5 GHz to internet.
 you can download the script and configure you main router SSID and password and you AP SSID and new Password.It will do rest of the setup.
 
-sh setup_openwrt_ap.sh
+Execute the script by SSH into OpenWRT router.  **sh setup_openwrt_ap.sh** #Script will ask for Main router SSID and Password.
 
-there are commands for debugging and error if any.
+Execute the script by SSH into OpenWRT router. 
+
+ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.1.1  # No password required
+
+SCP the script into router : scp -O -oHostKeyAlgorithms=+ssh-rsa -r ./setup_openwrt_ap.sh root@192.168.1.1:/root/
